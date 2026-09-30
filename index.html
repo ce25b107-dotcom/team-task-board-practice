@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Task Board</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Team Task Board</h1>
+      <p>Practice screening project</p>
+    </header>
+
+    <section class="task-form">
+      <h2>Create Task</h2>
+      <form id="taskForm">
+        <label>
+          Title
+          <input id="title" type="text" placeholder="Task title">
+        </label>
+
+        <label>
+          Description
+          <textarea id="description" placeholder="Optional description"></textarea>
+        </label>
+
+        <label>
+          Status
+          <select id="status">
+            <option value="Todo">Todo</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Done">Done</option>
+          </select>
+        </label>
+
+        <button type="submit">Add Task</button>
+        <p id="formError" class="error"></p>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <div class="toolbar">
+        <h2>Tasks</h2>
+        <select id="filter">
+          <option value="All">All</option>
+          <option value="Todo">Todo</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+      </div>
+
+      <p id="message"></p>
+      <div id="taskList"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "team-task-board-practice",
+  "version": "1.0.0",
+  "description": "Practice AI-assisted screening project",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
